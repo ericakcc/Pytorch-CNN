@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ML specific
+*.pt
+*.pth
+*.h5
+*.ckpt
+runs/
+logs/
+tensorboard/
+wandb/
+models/saved/
+
+# Data
+data/raw/
+data/processed/
+*.csv
+*.json
+*.npy
+*.npz
