@@ -30,8 +30,8 @@ def main(args):
     print("Using device:", device)
 
     # Load CSV data (modify paths as needed)
-    train_csv_path = args.train_csv if args.train_csv else "/kaggle/input/digit-recognizer/train.csv"
-    test_csv_path = args.test_csv if args.test_csv else "/kaggle/input/digit-recognizer/test.csv"
+    train_csv_path = args.train_csv if args.train_csv else "../dataset/digit-recognizer/train.csv"
+    test_csv_path = args.test_csv if args.test_csv else "../dataset/digit-recognizer/test.csv"
     train_df = pd.read_csv(train_csv_path)
     test_df = pd.read_csv(test_csv_path)
     print("Train CSV shape:", train_df.shape)
@@ -84,7 +84,7 @@ if __name__ == '__main__':
     parser.add_argument('--epochs', type=int, default=15, help="Number of training epochs")
     parser.add_argument('--submit', action='store_true', help="Generate submission file")
     parser.add_argument('--submission_path', type=str, default="submission.csv", help="Path to save the submission file")
-    parser.add_argument('--sample_submission', type=str, default="/kaggle/input/digit-recognizer/sample_submission.csv", help="Path to sample_submission.csv")
+    parser.add_argument('--sample_submission', type=str, default="../dataset/digit-recognizer/sample_submission.csv", help="Path to sample_submission.csv")
     parser.add_argument('--train_csv', type=str, default="", help="Path to training CSV file")
     parser.add_argument('--test_csv', type=str, default="", help="Path to test CSV file")
     args = parser.parse_args()
